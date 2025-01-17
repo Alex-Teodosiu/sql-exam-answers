@@ -10,6 +10,7 @@ WITH SpecializationVisitCounts AS (
     GROUP BY
         doctor.specialization, doctor.id
 ),
+    
 SpecializationAverages AS (
     SELECT
         specialization,
@@ -19,6 +20,7 @@ SpecializationAverages AS (
     GROUP BY
         specialization
 )
+    
 SELECT
     doctor.first_name,
     doctor.last_name
